@@ -79,6 +79,7 @@ nav a:hover {
     justify-content: center; /* Ito ang maglalagay sa nav sa mismong gitna */
 }
 
+
 /* SECTION */
 section {
     min-height: 100vh;
@@ -697,5 +698,61 @@ footer {
         display: block;
         margin: 2rem;
         font-size: 2rem;
+    }
+}
+
+/* ================== FOR MOBILE ================== */
+
+/*HEADER*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Pagpatungin ang logo at nav */
+        padding: 1rem 4%;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 1rem; /* Bawasan ang space sa pagitan ng links */
+        font-size: 1.5rem;
+        display: inline-block; /* Para mag-wrap sila nang maayos */
+    }
+}
+
+/*HOME*/
+/*HOME*/
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column-reverse; /* Text sa taas, Image sa baba o vice versa */
+        padding: 8rem 4% 2rem;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 4rem; /* Liitan ang text para kasya sa screen ng phone */
+    }
+
+    .home-content p {
+        font-size: 1.8rem;
+    }
+
+    .home-img img {
+        width: 60vw; /* Lakihan ang image sa phone para kitang-kita ka! */
+    }
+}
+
+/* ABOUT and Skills*/
+@media (max-width: 768px) {
+    .about-education {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-wrapper {
+        grid-template-columns: 1fr; /* Isang column na lang sa phone */
+    }
+    
+    .contact-card {
+        width: 100%; /* Full width na ang cards sa mobile */
     }
 }
