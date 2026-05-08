@@ -12,35 +12,31 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
   
-    height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
     background-color: rgb(0, 0, 0);
     color: white;
-    /*screen size*/
-    width: 1920px; /* fixed width */
-    min-width: 1920px; /* para di lumiliit */  
+    width: 100%; /* fixed width */
+
 }
 
 /* HEADER */
 header {
-    margin-top: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
+    padding: 2rem 9%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent para kita pa rin ang background */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    /*screen size*/
-    width: 1920px; /* fixed width */
-    min-width: 1920px; /* para di lumiliit */ 
 }
 
 .logo{
@@ -55,13 +51,21 @@ header {
     transform: scale(1.1);
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Sasakupin nito ang gitnang space */
+    text-align: center;
+}
+
 nav a{
     font-size: 1.8rem;
     color: white;
-    margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
+    margin: 0 2rem;
 }
 
 nav a:hover {
@@ -69,12 +73,17 @@ nav a:hover {
     border-bottom: 3px solid rgb(255, 0, 242);
 }
 
+#navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Ito ang maglalagay sa nav sa mismong gitna */
+}
+
 /* SECTION */
 section {
-    min-height: 1080px;
+    min-height: 100vh;
     padding: 10rem 9% 5rem;
-    width: 1920px; /* fixed width */
-    min-width: 1920px; /* para di lumiliit */ 
+    width: 100%; 
 }
 
 /* ================== HOME ================== */
@@ -93,6 +102,11 @@ section {
 }
 
 /* TEXT */
+.home-content {
+    flex: 1;
+    min-width: 300px;
+}
+
 .home-content h1 {
     font-size: 7rem;
     font-style: oblique;
@@ -116,8 +130,11 @@ span {
 }
 
 /* IMAGE */
+
 .home-img img{
-    width: 22vw;
+    width: 25vw;
+    min-width: 280px;
+    max-width: 400px;
     border-radius: 50%;
     box-shadow: 0 0 25px rgb(255, 0, 242);
     cursor: pointer;
@@ -191,39 +208,14 @@ section#about {
     padding: 0 3rem;
 }
 
-div.about-container1{
-    /* From https://css.glass */
+.about-container1, .about-container2 {
     background: rgba(236, 17, 255, 0.13);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.9px);
-    -webkit-backdrop-filter: blur(8.9px);
     border: 1px solid rgba(236, 17, 255, 0.42);
-
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    margin: 3rem;
+    margin: 3rem auto;
     padding: 2rem;
-}
-
-div.about-container2{
-    /* From https://css.glass */
-    background: rgba(236, 17, 255, 0.13);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.9px);
-    -webkit-backdrop-filter: blur(8.9px);
-    border: 1px solid rgba(236, 17, 255, 0.42);
-
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    margin: 3rem;
-    padding: 2rem;
-    
+    max-width: 1000px; /* Para hindi sobrang lapad sa 1920px screen */
 }
 
 div.about-container2 h2{
