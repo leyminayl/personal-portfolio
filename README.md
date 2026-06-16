@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This project is built as part of my **Web Analytics** subject at iACADEMY to showcase my skills in Web Development, UI/UX Design, and Data Tracking.
 
 ## 🔗 Live Demo
-You can view the live site here: [https://lmnl-personal-portfolio.vercel.app/]
+You can view the live site here: [https://leiminaileacera.vercel.app/]
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML5, CSS3 (Glassmorphism UI), JavaScript
