@@ -396,30 +396,31 @@
 
     <!-- LIGHTBOX MODAL JAVASCRIPT -->
     <script>
-    function openModal(element) {
-        var modal = document.getElementById("certModal");
-        var modalImg = document.getElementById("modalImg");
-        var captionText = document.getElementById("caption");
-        
-        var imgSrc = element.getAttribute("data-img");
-        var title = element.getAttribute("data-title") || element.innerText;
+function openModal(element) {
+    var modal = document.getElementById("certModal");
+    var modalImg = document.getElementById("modalImg");
+    var captionText = document.getElementById("caption");
+    
+    var imgSrc = element.getAttribute("data-img");
+    var title = element.getAttribute("data-title") || element.innerText;
 
-        if (imgSrc) {
-            modal.style.display = "block";
-            modalImg.src = imgSrc;
-            captionText.innerHTML = title;
-        }
+    if (imgSrc) {
+        modal.style.display = "block";
+        // Gamitin ang encodeURI para ma-convert ang spaces sa '%20'
+        modalImg.src = encodeURI(imgSrc);
+        captionText.innerHTML = title;
     }
+}
 
-    function closeModal() {
-        document.getElementById("certModal").style.display = "none";
+function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+}
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        closeModal();
     }
-
-    document.addEventListener('keydown', function(event) {
-        if (event.key === "Escape") {
-            closeModal();
-        }
-    });
-    </script>
+});
+</script>
 </body>
 </html>
