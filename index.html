@@ -22,25 +22,19 @@
     <header>
         <div id="navigation">
             <nav>
-                <nav>
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#skills">Skills & Tools</a>
-                    <a href="#certificates">Certificates</a>
-                    <a href="#leadership">Leadership</a>
-                    <a href="#contact">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills & Tools</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#leadership">Leadership</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
     <section id="home"> 
-           <!-- PROFILE PICTURE CONTAINER -->
-    <div class="home-img">
-        <img src="img/profile.jpg" alt="Lei Min Aile Acera">
-    </div>
-
         <div class="home-content">
             <h1><span>Lei Min Aile Acera</span></h1>
             <h3 class="typing-text">Web Developer | UI & UX Designer</h3>
@@ -54,123 +48,139 @@
                 <a href="img/AceraLeiMinAile_CV.pdf" class="btn btn-outline" download="AceraLeiMinAile_CV.pdf">Download CV</a>
             </div>
         </div>
+
+        <div class="home-img">
+            <img src="img/profile.jpg" alt="Lei Min Aile Acera">
+        </div>
     </section>
 
+    <!-- REDESIGNED ABOUT SECTION -->
     <section id="about">
-        <div class="about-content">
-            <h1>About Me</h1>
-            <center>
-                <div class="about-container1">
+        <div class="section-container">
+            <h1 class="about-title">About Me</h1>
+
+            <div class="about-grid">
+                <!-- LEFT COLUMN: BIO & HIGHLIGHTS -->
+                <div class="about-bio-card">
+                    <h2>Who I Am</h2>
                     <p>
-                    Hi! I’m Lei, someone who loves turning ideas into interactive and visually appealing websites.
-                    <br>I enjoy both the creative side of design and the logical side of coding.
+                        Hi! I’m <strong>Lei</strong>, an aspiring Web Developer and UI/UX Designer passionate about turning complex ideas into clean, interactive, and user-friendly digital experiences.
+                    </p>
+                    <p>
+                        As an IT student, I enjoy balancing the creative side of design with the logical precision of front-end development
                     </p>
 
-                    <p>
-                    I’m currently exploring and improving my skills in web development and UI/UX, 
-                    <br>always aiming to create clean, user-friendly, and meaningful digital experiences.
-                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>BSIT</h3>
+                            <p>Web Development Major</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Featured Web Projects</p>
+                        </div>
+                    </div>
                 </div>
-            </center>  
-             
-            <div class="about-container2">
-                <h2>Education</h2>
-                <div class="about-education">
-                    <div class="edu-item">
-                        <img src="img/iac.png" alt="iACADEMY">
-                        <h3>College</h3>
-                        <h4>iAcademy - Makati City</h4>
-                        <p>BSIT - Web Dev<br>2023 - Present</p>
-                    </div>
 
-                    <div class="edu-item">
-                        <img src="img/fbhs.png" alt="Fort Bonifacio High School">
-                        <h3>Senior High School</h3>
-                        <h4>Fort Bonifacio High School</h4>
-                        <p>ICT Strand<br>2021 - 2023</p>
-                    </div>
+                <!-- RIGHT COLUMN: EDUCATION TIMELINE -->
+                <div class="about-edu-card">
+                    <h2>Education</h2>
+                    
+                    <div class="timeline">
+                        <!-- COLLEGE -->
+                        <div class="timeline-item">
+                            <div class="timeline-img">
+                                <img src="img/iac.png" alt="iACADEMY">
+                            </div>
+                            <div class="timeline-content">
+                                <h3>iACADEMY Nexus</h3>
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <p class="specialization">Major in Web Development</p>
+                                <span class="timeline-date">2023 – Present</span>
+                            </div>
+                        </div>
 
-                    <div class="edu-item">
-                        <img src="img/cnhs.png" alt="Cupang National High School">
-                        <h3>Junior High School</h3>
-                        <h4>Cupang National High School</h4>
-                        <p>2017 - 2021</p>
-                    </div>
-
-                    <div class="edu-item">
-                        <img src="img/ces.png" alt="Cupang Elementary School">
-                        <h3>Elementary</h3>
-                        <h4>Cupang Elementary School</h4>
-                        <p>2011 - 2017</p>
+                        <!-- SENIOR HIGH SCHOOL -->
+                        <div class="timeline-item">
+                            <div class="timeline-img">
+                                <img src="img/fbhs.png" alt="Fort Bonifacio High School">
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Fort Bonifacio High School</h3>
+                                <h4>Technical-Vocational Livelihood – Information and Communications Technology (TVL-ICT)</h4>
+                                <p class="specialization">Specialization in Computer Systems Servicing</p>
+                                <span class="timeline-date">2021 – 2023</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- EXPERIENCE SECTION -->
-<section id="experience">
-    <div class="section-container">
-        <h1>Experience</h1>
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <div class="section-container">
+            <h1>Experience</h1>
 
-        <div class="lead-box">
-            <div class="lead-header">
-                <div class="org-info">
-                    <h2>DigiPlus Interactive Corp.</h2>
-                    <p>Taguig City, Philippines</p>
+            <div class="lead-box">
+                <div class="lead-header">
+                    <div class="org-info">
+                        <h2>DigiPlus Interactive Corp.</h2>
+                        <p>Taguig City, Philippines</p>
+                    </div>
+                    <div class="role-info">
+                        <span class="role">Communication Intern</span>
+                        <span class="date">Aug 2026 – Nov 2026</span>
+                    </div>
                 </div>
-                <div class="role-info">
-                    <span class="role">Communication Intern</span>
-                    <span class="date">Aug 2026 – Nov 2026</span>
-                </div>
-            </div>
-            <ul class="lead-list">
-                <li>Redesigned and revamped website pages using WordPress, improving layout, responsiveness, and overall UI/UX.</li>
-                <li>Published news and foundation updates using CMS with proper structure and formatting.</li>
-                <li>Served as Project Coordinator for the BingoPlus Apps Charity Page, coordinating deliverables across developers, designers, and CSR, Branding, and Communications teams.</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- FEATURED PROJECTS SECTION -->
-<section id="projects">
-    <div class="section-container">
-        <h1>Featured Projects</h1>
-
-        <div class="projects-grid">
-            <!-- PROJECT 1 -->
-            <div class="skills-card project-card">
-                <h2>DigiPlus Foundation - PH Impact Map</h2>
-                <div class="skill-tags" style="margin-bottom: 1.5rem;">
-                    <span>WordPress</span><span>PHP</span><span>JavaScript</span><span>Leaflet.js</span>
-                </div>
-                <p class="project-desc">Built an interactive Philippines impact map visualizing 45+ community programs with dynamic CSV data ingestion and custom PHP shortcodes.</p>
-                <a href="https://digiplusfoundation.org/impact-ph-map/" target="_blank" class="project-link">View Live Project <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <!-- PROJECT 2 -->
-            <div class="skills-card project-card">
-                <h2>DigiPlus Foundation - FutureSmart Scholarship Portal</h2>
-                <div class="skill-tags" style="margin-bottom: 1.5rem;">
-                    <span>WordPress</span><span>Oxygen Builder</span><span>Forminator</span>
-                </div>
-                <p class="project-desc">Revamped landing page layouts and implemented multi-step application forms connected to backend processing workflows.</p>
-                <a href="https://digiplusfoundation.org/futuresmart-scholarship/" target="_blank" class="project-link">View Live Project <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <!-- PROJECT 3 -->
-            <div class="skills-card project-card">
-                <h2>iRent (Academic Project)</h2>
-                <div class="skill-tags" style="margin-bottom: 1.5rem;">
-                    <span>HTML5</span><span>CSS3</span><span>Bootstrap 5</span><span>JavaScript</span>
-                </div>
-                <p class="project-desc">Developed a responsive campus peer-to-peer equipment rental web app featuring interactive sliders and local-storage dark/light theme toggle.</p>
-                <a href="https://irent-website.netlify.app/" target="_blank" class="project-link">View Demo <i class="fas fa-external-link-alt"></i></a>
+                <ul class="lead-list">
+                    <li>Redesigned and revamped website pages using WordPress, improving layout, responsiveness, and overall UI/UX.</li>
+                    <li>Published news and foundation updates using CMS with proper structure and formatting.</li>
+                    <li>Served as Project Coordinator for the BingoPlus Apps Charity Page, coordinating deliverables across developers, designers, and CSR, Branding, and Communications teams.</li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects">
+        <div class="section-container">
+            <h1>Featured Projects</h1>
+
+            <div class="projects-grid">
+                <!-- PROJECT 1 -->
+                <div class="skills-card project-card">
+                    <h2>DigiPlus Foundation - PH Impact Map</h2>
+                    <div class="skill-tags" style="margin-bottom: 1.5rem;">
+                        <span>WordPress</span><span>PHP</span><span>JavaScript</span><span>Leaflet.js</span>
+                    </div>
+                    <p class="project-desc">Built an interactive Philippines impact map visualizing 45+ community programs with dynamic CSV data ingestion and custom PHP shortcodes.</p>
+                    <a href="https://digiplusfoundation.org/impact-ph-map/" target="_blank" class="project-link">View Live Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="skills-card project-card">
+                    <h2>DigiPlus Foundation - FutureSmart Scholarship Portal</h2>
+                    <div class="skill-tags" style="margin-bottom: 1.5rem;">
+                        <span>WordPress</span><span>Oxygen Builder</span><span>Forminator</span>
+                    </div>
+                    <p class="project-desc">Revamped landing page layouts and implemented multi-step application forms connected to backend processing workflows.</p>
+                    <a href="https://digiplusfoundation.org/futuresmart-scholarship/" target="_blank" class="project-link">View Live Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="skills-card project-card">
+                    <h2>iRent (Academic Project)</h2>
+                    <div class="skill-tags" style="margin-bottom: 1.5rem;">
+                        <span>HTML5</span><span>CSS3</span><span>Bootstrap 5</span><span>JavaScript</span>
+                    </div>
+                    <p class="project-desc">Developed a responsive campus peer-to-peer equipment rental web app featuring interactive sliders and local-storage dark/light theme toggle.</p>
+                    <a href="https://irent-website.netlify.app/" target="_blank" class="project-link">View Demo <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="skills">
         <div class="skills-content">
@@ -180,57 +190,33 @@
                 <div class="skills-card">
                     <h2>Technical Skills</h2>
                     <div class="skill-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>PHP</span>
-                        <span>Java</span>
-                        <span>phpMyAdmin</span>
-                        <span>MySQL</span>
-                        <span>MongoDB</span>
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+                        <span>Java</span><span>phpMyAdmin</span><span>MySQL</span><span>MongoDB</span>
                     </div>
                 </div>
 
                 <div class="skills-card">
                     <h2>Design Skills</h2>
                     <div class="skill-tags">
-                        <span>UI/UX Design</span>
-                        <span>Wireframing</span>
-                        <span>Mockups</span>
-                        <span>Prototyping</span>
+                        <span>UI/UX Design</span><span>Wireframing</span><span>Mockups</span><span>Prototyping</span>
                     </div>
                 </div>
 
                 <div class="skills-card">
                     <h2>Soft Skills</h2>
                     <div class="skill-tags">
-                        <span>Teamwork</span>
-                        <span>Creativity</span>
-                        <span>Problem Solving</span>
-                        <span>Communication</span>
-                        <span>Adaptability</span>
+                        <span>Teamwork</span><span>Creativity</span><span>Problem Solving</span>
+                        <span>Communication</span><span>Adaptability</span>
                     </div>
                 </div>            
 
                 <div class="skills-card">
-                    <h2>Tech Stack</h2>
+                    <h2>Tech Stack & CMS</h2>
                     <div class="skill-tags">
-                        <span>Figma</span>
-                        <span>Photoshop</span>
-                        <span>Canva</span>
-                        <span>VS Code</span>
-                        <span>Vercel</span>
-                        <span>XAMPP</span>
-                        <span>GitHub</span>
-                        <span>WordPress</span>
+                        <span>Figma</span><span>Photoshop</span><span>Canva</span><span>VS Code</span>
+                        <span>Vercel</span><span>XAMPP</span><span>GitHub</span><span>WordPress</span>
                     </div>
                 </div>
-
-                <div class="skills-card">
-                    <h2>Content Management Systems (CMS)</h2>
-                    <div class="skill-tags">
-                        <span>WordPress</span>
-                    </div>
             </div>
         </div>
     </section>
@@ -239,56 +225,24 @@
         <div class="cert-content">
             <h1>Certificates & Trainings</h1>
 
-            <!-- CERTIFICATE 3 -->
-             <!-- CERTIFICATE VIA EXTERNAL LINK -->
-                <div class="cert-box">
-                    <div class="cert-header">
-                        <h2>Anthropic Certificates</h2>
-                        <span class="provider">Anthropic Academy | 2026</span>
-                    </div>
-                    
-                    <div class="cert-tags">
-                        <!-- Direct Link Tag -->
-
-                        <!-- July 22, 2026 -->
-                        <a href="https://verify.skilljar.com/c/tmw2kmx5t7n7" target="_blank" class="clickable-tag link-tag">
-                           Claude 101<i class="fas fa-external-link-alt"></i>
-                        </a>
-
-                        <a href="https://verify.skilljar.com/c/zjcizf45qn8b" target="_blank" class="clickable-tag link-tag">
-                           Introduction to Claude Cowork<i class="fas fa-external-link-alt"></i>
-                        </a>
-
-                        <a href="https://verify.skilljar.com/c/f2acii3gv2sq" target="_blank" class="clickable-tag link-tag">
-                           AI Fluency: AI Capabilities and Limitations<i class="fas fa-external-link-alt"></i>
-                        </a>
-
-                        <a href="https://verify.skilljar.com/c/ym8oz8556ohq" target="_blank" class="clickable-tag link-tag">
-                           AI Fluency: Framework & Foundations<i class="fas fa-external-link-alt"></i>
-                        </a>
-
-                        <!-- July 23, 2026 -->
-                        <a href="https://verify.skilljar.com/c/moy96senq7wk" target="_blank" class="clickable-tag link-tag">
-                           AI Fluency for Builders<i class="fas fa-external-link-alt"></i>
-                        </a>
-
-                         <a href="https://verify.skilljar.com/c/jcug6r6s6f8k" target="_blank" class="clickable-tag link-tag">
-                           AI Fluency for students<i class="fas fa-external-link-alt"></i>
-                        </a>
-
-                        <a href="https://verify.skilljar.com/c/z3i4mk8g9u3f" target="_blank" class="clickable-tag link-tag">
-                           Teaching AI Fluency<i class="fas fa-external-link-alt"></i>
-                        </a>
-
-                        
-
-                        
-
-                        
-                    </div>
+            <!-- ANTHROPIC CERTIFICATES -->
+            <div class="cert-box">
+                <div class="cert-header">
+                    <h2>Anthropic Certificates</h2>
+                    <span class="provider">Anthropic Academy | 2026</span>
                 </div>
+                <div class="cert-tags">
+                    <a href="https://verify.skilljar.com/c/tmw2kmx5t7n7" target="_blank" class="clickable-tag link-tag">Claude 101 <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/zjcizf45qn8b" target="_blank" class="clickable-tag link-tag">Introduction to Claude Cowork <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/f2acii3gv2sq" target="_blank" class="clickable-tag link-tag">AI Capabilities and Limitations <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/ym8oz8556ohq" target="_blank" class="clickable-tag link-tag">AI Fluency: Framework & Foundations <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/moy96senq7wk" target="_blank" class="clickable-tag link-tag">AI Fluency for Builders <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/jcug6r6s6f8k" target="_blank" class="clickable-tag link-tag">AI Fluency for Students <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/z3i4mk8g9u3f" target="_blank" class="clickable-tag link-tag">Teaching AI Fluency <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
 
-            <!-- CERTIFICATE 2 -->
+            <!-- TESDA VGD -->
             <div class="cert-box">
                 <div class="cert-header">
                     <h2>Visual Graphic Design Training</h2>
@@ -296,51 +250,45 @@
                 </div>
                 <div class="cert-tags">
                     <span class="clickable-tag" data-img="img/Certificates/Tesda-VGD/1. Introduction to Visual Graphic Design.JPEG" data-title="Intro to Visual Graphic Design" onclick="openModal(this)">
-                        Introduction to Visual Graphic Design<i class="fas fa-external-link-alt"></i>
+                        Introduction to Visual Graphic Design <i class="fas fa-search-plus"></i>
                     </span>
                     <span class="clickable-tag" data-img="img/Certificates/Tesda-VGD/2. Developing Designs for User Interface.JPEG" data-title="Designing for UI" onclick="openModal(this)">
-                        Developing Designs for User Interface<i class="fas fa-external-link-alt"></i>
+                        Developing Designs for User Interface <i class="fas fa-search-plus"></i>
                     </span>
                     <span class="clickable-tag" data-img="img/Certificates/Tesda-VGD/3. Developing Designs for User Experience.JPEG" data-title="Designing for UX" onclick="openModal(this)">
-                        Developing Designs for User Experience<i class="fas fa-external-link-alt"></i>
+                        Developing Designs for User Experience <i class="fas fa-search-plus"></i>
                     </span>
                 </div>
             </div>
 
-            <!-- CERTIFICATE 1 -->
+            <!-- TESDA CSS -->
             <div class="cert-box">
                 <div class="cert-header">
                     <h2>Computer Systems Servicing Training</h2>
                     <span class="provider">TESDA | 2023</span>
                 </div>
-                
                 <div class="cert-tags">
                     <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/1. NATIONAL CERTIFICATE II.PNG" data-title="National Certificate II" onclick="openModal(this)">
-                        National Certificate II<i class="fas fa-external-link-alt"></i>
+                        National Certificate II <i class="fas fa-search-plus"></i>
                     </span>
-
                     <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/2. Introduction to CSS.JPEG" data-title="Introduction to CSS" onclick="openModal(this)">
-                        Introduction to CSS<i class="fas fa-external-link-alt"></i>
+                        Introduction to CSS <i class="fas fa-search-plus"></i>
                     </span>
-
                     <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/3. Installing and Configuring Computer Systems.JPEG" data-title="Installing & Configuring Computer Systems" onclick="openModal(this)">
-                        Installing & Configuring Computer Systems<i class="fas fa-external-link-alt"></i>
+                        Installing & Configuring Computer Systems <i class="fas fa-search-plus"></i>
                     </span>
-
                     <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/4. Setting Up Computer Networks.JPEG" data-title="Setting Up Computer Networks" onclick="openModal(this)">
-                        Setting Up Computer Networks<i class="fas fa-external-link-alt"></i>
+                        Setting Up Computer Networks <i class="fas fa-search-plus"></i>
                     </span>
-
                     <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/5. Setting Up Computer Servers.JPEG" data-title="Setting Up Computer Servers" onclick="openModal(this)">
-                        Setting Up Computer Servers<i class="fas fa-external-link-alt"></i>
+                        Setting Up Computer Servers <i class="fas fa-search-plus"></i>
                     </span>
-
                     <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/6. Maintaining Computer Systems and Networks.JPEG" data-title="Maintaining Computer Systems & Networks" onclick="openModal(this)">
-                        Maintaining Computer Systems & Networks<i class="fas fa-external-link-alt"></i>
+                        Maintaining Computer Systems & Networks <i class="fas fa-search-plus"></i>
                     </span>
                 </div>
             </div>
-
+        </div>
     </section>
 
     <section id="leadership">
