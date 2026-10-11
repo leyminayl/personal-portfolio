@@ -20,19 +20,22 @@
 </head>
 <body>
     <header>
-        <div id="navigation">
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#leadership">Leadership</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <!--<a href="#home" class="logo">lmnlctcr</a>
+    <i class="fas fa-bars" id="menu-icon"></i>-->
+    
+    <div id="navigation">
+        <nav>
+            <a href="#home" onclick="closeNav()">Home</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#experience" onclick="closeNav()">Experience</a>
+            <a href="#projects" onclick="closeNav()">Projects</a>
+            <a href="#skills" onclick="closeNav()">Skills</a>
+            <a href="#certificates" onclick="closeNav()">Certificates</a>
+            <a href="#leadership" onclick="closeNav()">Leadership</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </nav>
+    </div>
+</header>
 
     <section id="home"> 
         <div class="home-content">
@@ -421,6 +424,20 @@ document.addEventListener('keydown', function(event) {
         closeModal();
     }
 });
+</script>
+<script>
+const menuIcon = document.getElementById('menu-icon');
+const navigation = document.getElementById('navigation');
+
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('fa-times'); // Nagiging 'X' icon kapag nakatoggle
+    navigation.classList.toggle('active');
+});
+
+function closeNav() {
+    menuIcon.classList.remove('fa-times');
+    navigation.classList.remove('active');
+}
 </script>
 </body>
 </html>

@@ -782,3 +782,67 @@ footer {
 
     .role-info { text-align: left !important; }
 }
+
+
+/* Add:HEADER BASE STYLES */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(220, 103, 255, 0.2);
+}
+
+.logo {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 700;
+}
+
+#menu-icon {
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none; /* Tago sa Desktop */
+}
+
+/* MOBILE MEDIA QUERY */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block; /* Papalit sa Mobile */
+    }
+
+    #navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 0;
+        background: rgba(10, 5, 15, 0.98);
+        border-bottom: 2px solid rgb(220, 103, 255);
+        display: none; /* Hide default sa mobile */
+        backdrop-filter: blur(10px);
+    }
+
+    #navigation.active {
+        display: flex; /* Lalabas kapag kinlick ang icon */
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        font-size: 1.8rem;
+        margin: 1.2rem 0;
+        text-align: center;
+    }
+}
