@@ -675,15 +675,36 @@ footer {
 /* ================== MOBILE RESPONSIVE FIXES ================== */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        padding: 1rem 4%;
-        text-align: center;
+        padding: 1rem 0 !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    #navigation {
+        width: 100% !important;
+        overflow-x: auto !important; /* SWIPEABLE HORIZONTAL SCROLL */
+        white-space: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Hides scrollbar on Firefox */
+    }
+
+    #navigation::-webkit-scrollbar {
+        display: none; /* Hides scrollbar on Chrome/Safari */
+    }
+
+    nav {
+        display: inline-flex !important;
+        justify-content: flex-start !important;
+        padding: 0.5rem 1.5rem !important;
+        width: max-content !important;
     }
 
     nav a {
-        margin: 0.8rem;
-        font-size: 1.4rem;
-        display: inline-block;
+        font-size: 1.4rem !important;
+        margin: 0 0.8rem !important;
+        padding: 0.4rem 0.8rem !important;
+        flex-shrink: 0 !important;
+        display: inline-block !important;
     }
 
     /* MOBILE HOME FIX */
