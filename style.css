@@ -16,13 +16,11 @@ html{
 }
 
 body{
-  
     min-height: 100vh;
     overflow-x: hidden;
     background-color: rgb(0, 0, 0);
     color: white;
-    width: 100%; /* fixed width */
-
+    width: 100%;
 }
 
 /* HEADER */
@@ -32,7 +30,7 @@ header {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent para kita pa rin ang background */
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +53,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1; /* Sasakupin nito ang gitnang space */
+    flex: 1;
     text-align: center;
 }
 
@@ -76,9 +74,8 @@ nav a:hover {
 #navigation {
     width: 100%;
     display: flex;
-    justify-content: center; /* Ito ang maglalagay sa nav sa mismong gitna */
+    justify-content: center;
 }
-
 
 /* SECTION */
 section {
@@ -93,7 +90,6 @@ section {
     justify-content: center;
     align-items: center;
     gap: 8rem;
-/* From https://css.glass "Glassmorphism Effect*/
     background: rgba(31, 15, 34, 0.75);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -102,7 +98,6 @@ section {
     border: 1px solid rgba(149, 80, 163, 0.32);
 }
 
-/* TEXT */
 .home-content {
     flex: 1;
     min-width: 300px;
@@ -130,8 +125,6 @@ span {
     max-width: 800px;
 }
 
-/* IMAGE */
-
 .home-img img{
     width: 25vw;
     min-width: 280px;
@@ -146,7 +139,6 @@ span {
     transform: scale(1.05);
 }
 
-/* SOCIAL ICONS */
 .social-icons a {
     display:inline-flex;
     justify-content: center;
@@ -154,7 +146,7 @@ span {
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid rgb(220, 103, 255);;
+    border: 0.2rem solid rgb(220, 103, 255);
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
@@ -166,32 +158,48 @@ span {
     background-color: rgb(255, 0, 242);
 }
 
-/* BUTTON */
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
     background-color: rgb(220, 103, 255);
     color: white;
     border-radius: 4rem;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 1rem;
     transition: 0.3s ease;
 }
 
 .btn:hover{
-    background-color:  rgb(255, 0, 242);
+    background-color: rgb(255, 0, 242);
+}
+
+/* CTA & BUTTON TWEAKS */
+.home-buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.btn-outline {
+    background-color: transparent !important;
+    border: 0.2rem solid rgb(220, 103, 255) !important;
+}
+
+.btn-outline:hover {
+    background-color: rgb(220, 103, 255) !important;
+    color: white !important;
 }
 
 /* ================== ABOUT ================== */
 section#about {
-/* From https://css.glass "Glassmorphism Effect*/
     background: rgba(31, 15, 34, 0.75);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(14.9px);
     -webkit-backdrop-filter: blur(14.9px);
     border: 1px solid rgba(149, 80, 163, 0.32);
-
 }
 
 .about-content h1 {
@@ -216,7 +224,7 @@ section#about {
     border: 1px solid rgba(236, 17, 255, 0.42);
     margin: 3rem auto;
     padding: 2rem;
-    max-width: 1000px; /* Para hindi sobrang lapad sa 1920px screen */
+    max-width: 1000px;
 }
 
 div.about-container2 h2{
@@ -231,7 +239,7 @@ div.about-container2 h2{
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap; /* para responsive */
+  flex-wrap: wrap;
   padding-top: 4rem;
 }
 
@@ -242,7 +250,6 @@ div.about-container2 h2{
   text-align: center;
   width: 330px;
   transition: 0.3s ease;
-  
 }
 
 .edu-item img {
@@ -257,8 +264,40 @@ div.about-container2 h2{
     transform: scale(1.05);
 }
 
-/* ================== SKILLS ================== */
+/* ================== EXPERIENCE ================== */
+section#experience {
+    padding: 10rem 9% 5rem;
+    background: rgba(20, 10, 25, 0.8);
+    width: 100%;
+}
 
+/* ================== PROJECTS ================== */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-desc {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.project-link {
+    font-size: 1.5rem;
+    color: rgb(220, 103, 255);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.project-link:hover {
+    color: rgb(255, 0, 242);
+    text-decoration: underline;
+}
+
+/* ================== SKILLS ================== */
 section#skills {
     min-height: auto;
     display: flex;
@@ -271,7 +310,7 @@ section#skills {
 }
 
 .skills-content h1 {
-    font-size: 6rem; /* Medyo binabaan ko para di masyadong malaki */
+    font-size: 6rem;
     font-style: oblique;
     font-weight: 700;
     color: white;
@@ -290,12 +329,12 @@ section#skills {
 }
 
 .skills-card {
-    background: rgba(236, 17, 255, 0.08); /* Transparent dark purple vibe */
+    background: rgba(236, 17, 255, 0.08);
     border: 1px solid rgba(236, 17, 255, 0.2);
     border-radius: 15px;
     padding: 3rem;
     flex: 1;
-    min-width: 280px; /* Mas maliit na para mas maraming magkasya sa isang row */
+    min-width: 280px;
     transition: 0.4s ease;
     text-align: left;
 }
@@ -314,7 +353,6 @@ section#skills {
     letter-spacing: 1px;
 }
 
-/* ETO YUNG MAGIC: Skill Tags/Chips */
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
@@ -332,7 +370,6 @@ section#skills {
     cursor: default;
 }
 
-/* Highlight pag hinover yung mismong skill */
 .skill-tags span:hover {
     background: rgb(220, 103, 255);
     color: black;
@@ -341,7 +378,6 @@ section#skills {
 }
 
 /* ================== CERTIFICATES & TRAININGS ================== */
-
 section#certificates {
     padding: 10rem 9% 5rem;
     background: rgba(20, 10, 25, 0.8);
@@ -353,11 +389,11 @@ section#certificates {
 
 .cert-content {
     width: 100%;
-    max-width: 1000px; /* Mas makitid para mukhang document style */
+    max-width: 1000px;
 }
 
 .cert-content h1 {
-    font-size: 6rem; /* Medyo binabaan ko para di masyadong malaki */
+    font-size: 6rem;
     font-style: oblique;
     font-weight: 700;
     color: white;
@@ -367,7 +403,7 @@ section#certificates {
 
 .cert-box {
     background: rgba(236, 17, 255, 0.05);
-    border-left: 4px solid rgb(220, 103, 255); /* Highlight line sa gilid */
+    border-left: 4px solid rgb(220, 103, 255);
     padding: 2.5rem;
     margin-bottom: 3rem;
     border-radius: 0 15px 15px 0;
@@ -407,42 +443,101 @@ section#certificates {
     font-style: italic;
 }
 
-/* Tag Container */
 .cert-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.cert-tags span {
+/* CLICKABLE CERTIFICATE TAGS */
+.clickable-tag {
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(220, 103, 255, 0.2);
-    padding: 0.6rem 1.2rem;
-    border-radius: 5px;
+    border: 1px solid rgba(220, 103, 255, 0.3);
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
     font-size: 1.3rem;
-    color: #eee;
+    color: #f0f0f0;
+}
+
+.clickable-tag:hover {
+    background: rgb(220, 103, 255) !important;
+    color: black !important;
+    border-color: rgb(220, 103, 255) !important;
+    transform: translateY(-2px);
+    font-weight: 600;
+}
+
+.clickable-tag i {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* ================== CERTIFICATE MODAL LIGHTBOX ================== */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); 
+    backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 85%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(220, 103, 255, 0.5);
+    animation: zoom 0.3s ease-in-out;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.7); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+    color: #ccc;
+    font-size: 1.8rem;
+    padding: 15px 0;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
     transition: 0.3s;
+    cursor: pointer;
 }
 
-.cert-tags span:hover {
-    background: rgb(220, 103, 255);
-    color: black;
-    border-color: rgb(220, 103, 255);
-}
-
-/* Responsive adjustment */
-@media (max-width: 768px) {
-    .cert-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.close:hover,
+.close:focus {
+    color: rgb(255, 0, 242);
+    text-decoration: none;
 }
 
 /* ================== LEADERSHIP & ACTIVITIES ================== */
-
 section#leadership {
     padding: 10rem 9%;
-    background: rgba(31, 15, 34, 0.75); /* Kapareho ng Skills para sa consistency */
+    background: rgba(31, 15, 34, 0.75);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -455,7 +550,7 @@ section#leadership {
 }
 
 .leadership-content h1 {
-    font-size: 6rem; /* Medyo binabaan ko para di masyadong malaki */
+    font-size: 6rem;
     font-style: oblique;
     font-weight: 700;
     color: white;
@@ -465,7 +560,7 @@ section#leadership {
 
 .lead-box {
     background: rgba(236, 17, 255, 0.05);
-    border-right: 4px solid rgb(220, 103, 255); /* Right border naman para maiba sa Certs */
+    border-right: 4px solid rgb(220, 103, 255);
     padding: 3rem;
     margin-bottom: 3.5rem;
     border-radius: 15px 0 0 15px;
@@ -514,7 +609,6 @@ section#leadership {
     color: #aaa;
 }
 
-/* Bullet list style */
 .lead-list {
     list-style: none;
     padding-left: 1rem;
@@ -530,21 +624,11 @@ section#leadership {
 }
 
 .lead-list li::before {
-    content: "▹"; /* Triangle bullet para professional */
+    content: "▹";
     color: rgb(220, 103, 255);
     position: absolute;
     left: 0;
     font-weight: bold;
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .lead-header {
-        flex-direction: column;
-    }
-    .role-info {
-        text-align: left;
-    }
 }
 
 /* ================== CONTACT SECTION ================== */
@@ -602,7 +686,7 @@ section#contact p {
 }
 
 .contact-card p {
-    font-size: 1.5rem !important; /* Force smaller size for card text */
+    font-size: 1.5rem !important;
     margin-bottom: 2rem !important;
 }
 
@@ -655,81 +739,29 @@ footer {
     color: black;
 }
 
-
-
 /* ================== RESPONSIVE ================== */
-@media (max-width: 700px) {
-
-    .home{
-        flex-direction: column;
-        text-align: center;
-        gap: 4rem;
-    }
-
-    .home-img img{
-        width: 60vw;
-    }
-
-    .home-content h1{
-        font-size: 4.5rem;
-    }
-
-    .home-content h3{
-        font-size: 2rem;
-    }
-
-    nav{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 60%;
-        background-color: black;
-        border-left: 3px solid rgb(151, 32, 32);
-        border-bottom: 3px solid rgb(151, 32, 32);
-        border-bottom-left-radius: 2rem;
-        display: none;
-    }
-
-    nav.active {
-        display: block;
-    }
-
-    nav a {
-        display: block;
-        margin: 2rem;
-        font-size: 2rem;
-    }
-}
-
-/* ================== FOR MOBILE ================== */
-
-/*HEADER*/
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Pagpatungin ang logo at nav */
+        flex-direction: column;
         padding: 1rem 4%;
         text-align: center;
     }
 
     nav a {
-        margin: 1rem; /* Bawasan ang space sa pagitan ng links */
+        margin: 1rem;
         font-size: 1.5rem;
-        display: inline-block; /* Para mag-wrap sila nang maayos */
+        display: inline-block;
     }
-}
 
-/*HOME*/
-/*HOME*/
-@media (max-width: 768px) {
     #home {
-        flex-direction: column-reverse; /* Text sa taas, Image sa baba o vice versa */
+        flex-direction: column-reverse;
         padding: 8rem 4% 2rem;
         gap: 2rem;
         text-align: center;
     }
 
     .home-content h1 {
-        font-size: 4rem; /* Liitan ang text para kasya sa screen ng phone */
+        font-size: 4rem;
     }
 
     .home-content p {
@@ -737,22 +769,88 @@ footer {
     }
 
     .home-img img {
-        width: 60vw; /* Lakihan ang image sa phone para kitang-kita ka! */
+        width: 60vw;
     }
-}
 
-/* ABOUT and Skills*/
-@media (max-width: 768px) {
     .about-education {
         flex-direction: column;
         align-items: center;
     }
 
     .skills-wrapper {
-        grid-template-columns: 1fr; /* Isang column na lang sa phone */
+        grid-template-columns: 1fr;
     }
     
     .contact-card {
-        width: 100%; /* Full width na ang cards sa mobile */
+        width: 100%;
     }
+
+    .cert-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lead-header {
+        flex-direction: column;
+    }
+
+    .role-info {
+        text-align: left;
+    }
+}
+
+/* LINK-BASED CERTIFICATE TAGS */
+.link-tag {
+    text-decoration: none !important;
+    color: #f0f0f0 !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.link-tag:hover {
+    background: rgb(220, 103, 255) !important;
+    color: black !important;
+    border-color: rgb(220, 103, 255) !important;
+    transform: translateY(-2px);
+    font-weight: 600;
+}
+
+/* UNIFIED SECTION CONTAINER (Pinapantay ang lapad ng lahat ng sections) */
+.section-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section#experience, section#projects {
+    padding: 10rem 9% 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#experience h1, section#projects h1 {
+    font-size: 6rem;
+    font-style: oblique;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/* PROJECTS GRID FIX */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
