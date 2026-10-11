@@ -20,22 +20,21 @@
 </head>
 <body>
     <header>
-    <!--<a href="#home" class="logo">lmnlctcr</a>
-    <i class="fas fa-bars" id="menu-icon"></i>-->
-    
-    <div id="navigation">
-        <nav>
-            <a href="#home" onclick="closeNav()">Home</a>
-            <a href="#about" onclick="closeNav()">About</a>
-            <a href="#experience" onclick="closeNav()">Experience</a>
-            <a href="#projects" onclick="closeNav()">Projects</a>
-            <a href="#skills" onclick="closeNav()">Skills</a>
-            <a href="#certificates" onclick="closeNav()">Certificates</a>
-            <a href="#leadership" onclick="closeNav()">Leadership</a>
-            <a href="#contact" onclick="closeNav()">Contact</a>
-        </nav>
-    </div>
-</header>
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <div id="navigation">
+            <nav>
+                <a href="#home" onclick="closeNav()">Home</a>
+                <a href="#about" onclick="closeNav()">About</a>
+                <a href="#experience" onclick="closeNav()">Experience</a>
+                <a href="#projects" onclick="closeNav()">Projects</a>
+                <a href="#skills" onclick="closeNav()">Skills</a>
+                <a href="#certificates" onclick="closeNav()">Certificates</a>
+                <a href="#leadership" onclick="closeNav()">Leadership</a>
+                <a href="#contact" onclick="closeNav()">Contact</a>
+            </nav>
+        </div>
+    </header>
 
     <section id="home"> 
         <div class="home-content">
@@ -67,10 +66,10 @@
                 <div class="about-bio-card">
                     <h2>Who I Am</h2>
                     <p>
-                        Hi! I’m <strong>Lei</strong>, a Web Developer and UI/UX Designer who loves turning complex ideas into clean, interactive, and visually engaging digital experiences. 
+                        Hi! I’m <strong>Lei</strong>, an aspiring Web Developer and UI/UX Designer passionate about turning complex ideas into clean, interactive, and user-friendly digital experiences.
                     </p>
                     <p>
-                        I enjoy balancing the creative side of user-centric design with the logical precision of front-end development.
+                        As an IT student, I enjoy balancing the creative side of design with the logical precision of front-end development.
                     </p>
 
                     <div class="about-stats">
@@ -97,7 +96,8 @@
                             </div>
                             <div class="timeline-content">
                                 <h3>iACADEMY Nexus</h3>
-                                <h4>BSIT - Major in Web Development</h4>
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <p class="specialization">Major in Web Development</p>
                                 <span class="timeline-date">2023 – Present</span>
                             </div>
                         </div>
@@ -109,7 +109,8 @@
                             </div>
                             <div class="timeline-content">
                                 <h3>Fort Bonifacio High School</h3>
-                                <h4>Information & Communications Technology (ICT)</h4>
+                                <h4>Technical-Vocational Livelihood – Information and Communications Technology (TVL-ICT)</h4>
+                                <p class="specialization">Specialization in Computer Systems Servicing</p>
                                 <span class="timeline-date">2021 – 2023</span>
                             </div>
                         </div>
@@ -131,7 +132,7 @@
                         <p>Taguig City, Philippines</p>
                     </div>
                     <div class="role-info">
-                        <span class="role">Communication Intern</span>
+                        <span class="role">Communication Intern (Web Development & Project Coordinator)</span>
                         <span class="date">Aug 2026 – Nov 2026</span>
                     </div>
                 </div>
@@ -294,26 +295,26 @@
 
     <section id="leadership">
         <div class="leadership-content">
-            <h1>Leadership & Recognition</h1>
+            <h1>Leadership & Activities</h1>
 
-            <!-- NEW ROLE: DIGITAL AMBASSADOR -->
-<div class="lead-box">
-    <div class="lead-header">
-        <div class="org-info">
-            <h2>iACADEMY Nexus</h2>
-            <p>Institutional Brand Campaign</p>
-        </div>
-        <div class="role-info">
-            <span class="role">Digital Ambassador</span>
-            <span class="date">A.Y. 2026 – Present</span>
-        </div>
-    </div>
-    <ul class="lead-list">
-    <li>Endorsed by the Academics Department to serve as a Digital Ambassador representing the BSIT Web Development program across official school campaigns.</li>
-    <li>Participated in promotional media shoots, lookbooks, and branding initiatives to showcase student talent and iACADEMY's academic programs.</li>
-    <li>Coordinated with marketing and academic teams in executing creative requirements and promoting digital content across communication channels.</li>
-</ul>
-</div>
+            <!-- DIGITAL AMBASSADOR ENTRY -->
+            <div class="lead-box">
+                <div class="lead-header">
+                    <div class="org-info">
+                        <h2>iACADEMY Nexus</h2>
+                        <p>Institutional Brand Campaign</p>
+                    </div>
+                    <div class="role-info">
+                        <span class="role">Digital Ambassador</span>
+                        <span class="date">A.Y. 2026 – Present</span>
+                    </div>
+                </div>
+                <ul class="lead-list">
+                    <li>Endorsed by the Academics Department to serve as a Digital Ambassador representing the BSIT Web Development program across official school campaigns.</li>
+                    <li>Participated in promotional media shoots, lookbooks, and branding initiatives to showcase student talent and iACADEMY's academic programs.</li>
+                    <li>Coordinated with marketing and academic teams in executing creative requirements and promoting digital content across communication channels.</li>
+                </ul>
+            </div>
 
             <div class="lead-box">
                 <div class="lead-header">
@@ -397,47 +398,47 @@
         <div id="caption"></div>
     </div>
 
-    <!-- LIGHTBOX MODAL JAVASCRIPT -->
+    <!-- JAVASCRIPT FOR MODAL & NAV TOGGLE -->
     <script>
-function openModal(element) {
-    var modal = document.getElementById("certModal");
-    var modalImg = document.getElementById("modalImg");
-    var captionText = document.getElementById("caption");
-    
-    var imgSrc = element.getAttribute("data-img");
-    var title = element.getAttribute("data-title") || element.innerText;
+    // CERTIFICATE MODAL
+    function openModal(element) {
+        var modal = document.getElementById("certModal");
+        var modalImg = document.getElementById("modalImg");
+        var captionText = document.getElementById("caption");
+        
+        var imgSrc = element.getAttribute("data-img");
+        var title = element.getAttribute("data-title") || element.innerText;
 
-    if (imgSrc) {
-        modal.style.display = "block";
-        // Gamitin ang encodeURI para ma-convert ang spaces sa '%20'
-        modalImg.src = encodeURI(imgSrc);
-        captionText.innerHTML = title;
+        if (imgSrc) {
+            modal.style.display = "block";
+            modalImg.src = encodeURI(imgSrc);
+            captionText.innerHTML = title;
+        }
     }
-}
 
-function closeModal() {
-    document.getElementById("certModal").style.display = "none";
-}
-
-document.addEventListener('keydown', function(event) {
-    if (event.key === "Escape") {
-        closeModal();
+    function closeModal() {
+        document.getElementById("certModal").style.display = "none";
     }
-});
-</script>
-<script>
-const menuIcon = document.getElementById('menu-icon');
-const navigation = document.getElementById('navigation');
 
-menuIcon.addEventListener('click', () => {
-    menuIcon.classList.toggle('fa-times'); // Nagiging 'X' icon kapag nakatoggle
-    navigation.classList.toggle('active');
-});
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            closeModal();
+        }
+    });
 
-function closeNav() {
-    menuIcon.classList.remove('fa-times');
-    navigation.classList.remove('active');
-}
-</script>
+    // HAMBURGER MENU TOGGLE
+    const menuIcon = document.getElementById('menu-icon');
+    const navigation = document.getElementById('navigation');
+
+    menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('fa-times');
+        navigation.classList.toggle('active');
+    });
+
+    function closeNav() {
+        menuIcon.classList.remove('fa-times');
+        navigation.classList.remove('active');
+    }
+    </script>
 </body>
 </html>
