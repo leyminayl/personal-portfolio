@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Acera | Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4CQ2635X4Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4CQ2635X4Z');
+    </script>
+</head>
+<body>
+    <header>
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <div id="navigation">
+            <nav>
+                <a href="#home" onclick="closeNav()">Home</a>
+                <a href="#about" onclick="closeNav()">About</a>
+                <a href="#experience" onclick="closeNav()">Experience</a>
+                <a href="#projects" onclick="closeNav()">Projects</a>
+                <a href="#skills" onclick="closeNav()">Skills</a>
+                <a href="#certificates" onclick="closeNav()">Certificates</a>
+                <a href="#leadership" onclick="closeNav()">Leadership</a>
+                <a href="#contact" onclick="closeNav()">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home"> 
+        <div class="home-content">
+            <h1><span>Lei Min Aile Acera</span></h1>
+            <h3 class="typing-text">Web Developer | UI & UX Designer</h3>
+            <p>Welcome to my portfolio website! Feel free to explore my work and see what I’ve created.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/leiminaile-acera" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/leyminayl" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="home-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="img/AceraLeiMinAile_CV.pdf" class="btn btn-outline" download="AceraLeiMinAile_CV.pdf">Download CV</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="img/profile.jpg" alt="Lei Min Aile Acera">
+        </div>
+    </section>
+
+    <!-- REDESIGNED ABOUT SECTION -->
+    <section id="about">
+        <div class="section-container">
+            <h1 class="about-title">About Me</h1>
+
+            <div class="about-grid">
+                <!-- LEFT COLUMN: BIO & HIGHLIGHTS -->
+                 
+                <div class="about-bio-card">
+                    <h2>Who I Am</h2>
+                    <p>
+                        Hi! I’m <strong>Lei</strong>, an IT student with hands-on experience in Front-End Web Development, UI/UX Design, and Project Coordination—passionate about building clean, user-friendly digital solutions and keeping cross-functional deliverables on track.
+                    </p>
+                    <p>
+                        Rather than limiting myself to front-end work, I’m excited to expand my technical range into back-end systems, IT support, networking, and cloud technologies. I value hands-on learning, take initiative to upskill at a steady pace, and welcome structured training to take on new technical challenges.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>BSIT</h3>
+                            <p>Web Development Major</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>8+</h3>
+                            <p>Featured Web Projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: EDUCATION TIMELINE -->
+                <div class="about-edu-card">
+                    <h2>Education</h2>
+                    
+                    <div class="timeline">
+                        <!-- COLLEGE -->
+                        <div class="timeline-item">
+                            <div class="timeline-img">
+                                <img src="img/iac.png" alt="iACADEMY">
+                            </div>
+                            <div class="timeline-content">
+                                <h3>iACADEMY Nexus</h3>
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <p class="specialization">Major in Web Development</p>
+                                <span class="timeline-date">2023 – Present</span>
+                            </div>
+                        </div>
+
+                        <!-- SENIOR HIGH SCHOOL -->
+                        <div class="timeline-item">
+                            <div class="timeline-img">
+                                <img src="img/fbhs.png" alt="Fort Bonifacio High School">
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Fort Bonifacio High School</h3>
+                                <h4>Technical-Vocational Livelihood – Information and Communications Technology (TVL-ICT)</h4>
+                                <p class="specialization">Specialization in Computer Systems Servicing</p>
+                                <span class="timeline-date">2021 – 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <div class="section-container">
+            <h1>Experience</h1>
+
+            <div class="lead-box">
+                <div class="lead-header">
+                    <div class="org-info">
+                        <h2>DigiPlus Interactive Corp.</h2>
+                        <p>Taguig City, Philippines</p>
+                    </div>
+                    <div class="role-info">
+                        <span class="role">Communication Intern (Web Development & Project Coordinator)</span>
+                        <span class="date">August 2026 – Present</span>
+                    </div>
+                </div>
+                <ul class="lead-list">
+                    <li>Redesigned and revamped website pages using WordPress, improving layout, responsiveness, and overall UI/UX.</li>
+                    <li>Published news and foundation updates using CMS with proper structure and formatting.</li>
+                    <li>Served as Project Coordinator for the BingoPlus Apps Charity Page to track project tasks, timelines, and deliverables while coordinating with developers, designers, and CSR Branding and Communications teams.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects">
+        <div class="section-container">
+            <h1>Featured Projects</h1>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 (Academic Project - iRent) -->
+                <div class="dp-project-card">
+                    <img src="img/projects_banner/irent-website.netlify.app_.png" class="dp-project-banner" alt="iRent Academic Project">
+                    <div class="dp-project-body">
+                        <h4>iRent (Academic Project)</h4>
+                        <h6>May 2026 – Aug 2026</h6>
+                        
+                        <div class="dp-skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap 5</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Web Design</span>
+                        </div>
+                        <ul class="dp-project-desc">
+                            <li>Built a responsive campus rental web app using HTML5, CSS3, Bootstrap 5, and JavaScript to help students share gadgets and equipment.</li>
+                            <li>Integrated Google Analytics 4 (GA4) to track site traffic, user interactions, and page views as part of a Web Analytics course project.</li>
+                            <li>Designed a smooth user interface featuring a dark/light mode toggle that remembers the user's view preference, along with interactive equipment carousels using SwiperJS.</li>
+                        </ul>
+                        <div class="dp-project-footer">
+                            <a href="https://irent-website.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Live Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="dp-project-card">
+                    <img src="img/projects_banner/digiplusfoundation.org_futuresmart-scholarship_.png" class="dp-project-banner" alt="FutureSmart Scholarship Form">
+                    <div class="dp-project-body">
+                        <h4>FutureSmart Scholarship Form</h4>
+                        <h6>September 2026 – September 2026</h6>
+                        
+                        <div class="dp-skill-tags">
+                            <span>WordPress</span>
+                            <span>Front-End Development</span>
+                            <span>Responsive Web Design</span>
+                            <span>Oxygen Builder</span>
+                            <span>Web Analytics</span>
+                            <span>Forminator</span>
+                            <span>Data Cleaning & Excel Pivot Tables</span>
+                        </div>
+                        <ul class="dp-project-desc">
+                            <li>Designed and built responsive front-end layouts for the scholarship landing page and application portal using Oxygen Builder.</li>
+                            <li>Integrated Forminator for multi-step application forms and customized Easy Accordion for clean FAQ and eligibility guidelines.</li>
+                            <li>Integrated front-end form interfaces with backend data workflows in coordination with the IT team and supervisor.</li>
+                        </ul>
+                        <div class="dp-project-footer">
+                            <a href="https://digiplusfoundation.org/futuresmart-scholarship/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Live Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="dp-project-card">
+                    <img src="img/projects_banner/digiplusfoundation.org_impact-ph-map_.png" class="dp-project-banner" alt="Impact PH Map">
+                    <div class="dp-project-body">
+                        <h4>Impact PH Map</h4>
+                        <h6>September 2026 – October 2026</h6>
+                        
+                        <div class="dp-skill-tags">
+                            <span>WordPress</span>
+                            <span>Front-End Development</span>
+                            <span>Cross-functional Collaborations</span>
+                            <span>PHP</span>
+                            <span>Leaflet.js</span>
+                            <span>CSV Integration</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                            <span>HTML</span>
+                        </div>
+                        <ul class="dp-project-desc">
+                            <li>Built an interactive map using Leaflet.js and JavaScript to visualize 45+ community programs across the Philippines.</li>
+                            <li>Developed a custom WordPress shortcode (PHP) with a CSV-driven data pipeline for easy spreadsheet updates by non-technical staff.</li>
+                            <li>Implemented multi-category filtering, custom branded markers, auto-geocoding via Nominatim API, and mobile-responsive layouts.</li>
+                        </ul>
+                        <div class="dp-project-footer">
+                            <a href="https://digiplusfoundation.org/impact-ph-map/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Live Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4 -->
+                <div class="dp-project-card">
+                    <img src="img/projects_banner/digiplusfoundation.org_alagangplus_.png" class="dp-project-banner" alt="AlagangPlus – Medical Assistance Portal">
+                    <div class="dp-project-body">
+                        <h4>AlagangPlus – Medical Assistance Portal</h4>
+                        <h6>October 2026 – October 2026</h6>
+                        
+                        <div class="dp-skill-tags">
+                            <span>WordPress</span>
+                            <span>Front-End Development</span>
+                            <span>Responsive Web Design</span>
+                            <span>Cross-functional Collaborations</span>
+                            <span>Oxygen Builder</span>
+                            <span>Web Analytics</span>
+                            <span>Forminator</span>
+                            <span>Communication</span>
+                        </div>
+                        <ul class="dp-project-desc">
+                            <li>Developed responsive front-end layouts for the medical assistance portal using Oxygen Builder, ensuring accessible navigation for applicants.</li>
+                            <li>Configured multi-step application forms via Forminator and structured medical requirements and FAQs using Easy Accordion.</li>
+                            <li>Collaborated with the Healthcare Team, Communications Team, and supervisor to align medical guidelines, public messaging, and form workflows before launch.</li>
+                        </ul>
+                        <div class="dp-project-footer">
+                            <a href="https://digiplusfoundation.org/alagangplus/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Live Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 5 -->
+                <div class="dp-project-card">
+                    <img src="img/projects_banner/digiplusfoundation.org_wishplus-submit_.png" class="dp-project-banner" alt="WishPlus: Sagot Ko Na!">
+                    <div class="dp-project-body">
+                        <h4>WishPlus: Sagot Ko Na! – Wish Submission Page</h4>
+                        <h6>October 2026 – October 2026</h6>
+                        
+                        <div class="dp-skill-tags">
+                            <span>WordPress</span>
+                            <span>Front-End Development</span>
+                            <span>Responsive Web Design</span>
+                            <span>Cross-functional Collaborations</span>
+                            <span>Oxygen Builder</span>
+                            <span>Web Analytics</span>
+                            <span>Communication</span>
+                        </div>
+                        <ul class="dp-project-desc">
+                            <li>Built a dedicated wish-entry page for WishPlus: Sagot Ko Na! using Oxygen Builder, separating the beneficiary submission flow from the main Inclusive Empowerment page.</li>
+                            <li>Structured a streamlined user journey (Home Page → WishPlus → Wish Entry) featuring interactive category selection cards for Education Wish and Healthcare Wish to route applicants to the appropriate assistance portals.</li>
+                            <li>Collaborated with the Communications Team and supervisor to align program messaging, branding assets, and accessible navigation prior to launch.</li>
+                        </ul>
+                        <div class="dp-project-footer">
+                            <a href="https://digiplusfoundation.org/wishplus-submit/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Live Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 6 -->
+                <div class="dp-project-card">
+                    <img src="img/projects_banner/digiplusfoundation.org_inclusive-empowerment_.png" class="dp-project-banner" alt="Inclusive Empowerment Page">
+                    <div class="dp-project-body">
+                        <h4>Inclusive Empowerment Page (Revamped)</h4>
+                        <h6>October 2026 – October 2026</h6>
+                        
+                        <div class="dp-skill-tags">
+                            <span>WordPress</span>
+                            <span>Front-End Development</span>
+                            <span>Responsive Web Design</span>
+                            <span>Cross-functional Collaborations</span>
+                            <span>Oxygen Builder</span>
+                            <span>Communication</span>
+                        </div>
+                        <ul class="dp-project-desc">
+                            <li>Revamped the Inclusive Empowerment page using Oxygen Builder, implementing a structured two-column layout pairing program branding and descriptions with horizontal image carousels.</li>
+                            <li>Updated front-end sections and visual assets for DigiPlus Foundation’s core initiatives—WishPlus (community outreach), The Good Zone (child nutrition and feeding program), and Champion’s Hope (youth sports development).</li>
+                            <li>Coordinated with the Communications Team and Tech Education Team to gather, format, and publish approved program copy and featured photos.</li>
+                        </ul>
+                        <div class="dp-project-footer">
+                            <a href="https://digiplusfoundation.org/inclusive-empowerment/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Live Project <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 7 -->
+                <div class="dp-project-card">
+                    <img src="img/projects_banner/digiplusfoundation.org_news-updates_.png" class="dp-project-banner" alt="DigiPlus Foundation News & Updates">
+                    <div class="dp-project-body">
+                        <h4>DigiPlus Foundation News & Updates</h4>
+                        <h6>August 2026 – Present</h6>
+                        
+                        <div class="dp-skill-tags">
+                            <span>WordPress</span>
+                            <span>Front-End Development</span>
+                            <span>Web Content Publishing & Management</span>
+                            <span>Cross-functional Collaborations</span>
+                            <span>Content Management Systems (CMS)</span>
+                            <span>Communication</span>
+                        </div>
+                        <ul class="dp-project-desc">
+                            <li>Managed ongoing article publishing and content updates for the DigiPlus Foundation News & Updates section using WordPress CMS.</li>
+                            <li>Formatted blog layouts, featured images, and metadata to ensure visual consistency, readability, and mobile responsiveness across published stories.</li>
+                            <li>Collaborated closely with the Communications Team to review, schedule, and deploy approved press releases and CSR feature articles.</li>
+                        </ul>
+                        <div class="dp-project-footer dp-multi-links">
+                            <a href="https://digiplusfoundation.org/2026/08/30/futuresmart-scholars-multiplying-the-good-through-service/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                Article #1 <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://digiplusfoundation.org/2026/09/03/digiplus-foundation-reaches-over-25000-filipinos-in-major-mindanao-earthquake-response/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                Article #2 <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://digiplusfoundation.org/2026/09/11/digiplus-foundation-boosts-dswd-relief-efforts-with-200-sacks-of-rice-donation/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                Article #3 <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 8 (6-Photo Documentation Gallery) -->
+                <div class="dp-project-card">
+                    <img src="img/projects_banner/Charity Page Screenshots/BingoPlus App Charity Page – All Projects Cover.png" class="dp-project-banner" alt="Charity Page">
+                    <div class="dp-project-body">
+                        <h4>BingoPlus App Charity Page – Project Coordination, Impact Auditing & Release Tracking</h4>
+                        <h6>August 2026 – Present </h6>
+                        
+                        <div class="dp-skill-tags">
+                            <span>Project Coordination</span>
+                            <span>Quality Assurance</span>
+                            <span>Data Auditing</span>
+                            <span>Cross-functional Collaborations</span>
+                            <span>Communication</span>
+                        </div>
+                        <ul class="dp-project-desc">
+                            <li>Managed and updated a centralized tracking system in Lark to reconcile real-time field operations (Education, Disaster, Food, Medical, and Classroom initiatives) against live in-app statuses (Preparation, Ongoing, In Progress, Completed).</li>
+                            <li>Coordinated across program teams (TechEd, Healthcare, and Resilient), Brand & Communications, and the BingoPlus Product and Back-End teams to gather visual assets, resolve status discrepancies, and deploy timely project updates to the live Charity Page module.</li>
+                            <li>Audited in-app Impact Points, program dates, and progress indicators across CSR initiatives, consolidating findings into status reports presented directly to the Brands and Communications Manager and Executive Director.</li>
+                        </ul>
+                        <div class="dp-project-footer">
+                            <button type="button" class="project-link gallery-btn" onclick="openGalleryModal()">
+                                View Documentation (6 Photos) <i class="fas fa-images"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills-content">
+            <h1>Skills & Tools</h1>
+
+            <div class="skills-wrapper">
+                <!-- CARD 1: Web Development & Programming -->
+                <div class="skills-card">
+                    <h2>Web Development</h2>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>Java</span>
+                        <span>Bootstrap 5</span>
+                        <span>Leaflet.js</span>
+                        <span>SwiperJS</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- CARD 2: CMS, Builders & Plugins -->
+                <div class="skills-card">
+                    <h2>CMS & Web Builders</h2>
+                    <div class="skill-tags">
+                        <span>WordPress</span>
+                        <span>Oxygen Builder</span>
+                        <span>Forminator</span>
+                        <span>Easy Accordion</span>
+                        <span>Custom Shortcodes</span>
+                        <span>Web Content Publishing</span>
+                    </div>
+                </div>
+
+                <!-- CARD 3: Design, Analytics & Data -->
+                <div class="skills-card">
+                    <h2>UI/UX, Analytics & Data</h2>
+                    <div class="skill-tags">
+                        <span>Responsive Web Design</span>
+                        <span>UI/UX Design</span>
+                        <span>Wireframing & Prototyping</span>
+                        <span>Google Analytics 4 (GA4)</span>
+                        <span>CSV Data Integration</span>
+                        <span>Nominatim API</span>
+                        <span>Excel Pivot Tables</span>
+                    </div>
+                </div>
+
+                <!-- CARD 4: Tools, Collaboration & Operations -->
+                <div class="skills-card">
+                    <h2>Tools & Collaboration</h2>
+                    <div class="skill-tags">
+                        <span>Figma</span>
+                        <span>Photoshop</span>
+                        <span>Canva</span>
+                        <span>VS Code</span>
+                        <span>GitHub</span>
+                        <span>Vercel</span>
+                        <span>XAMPP</span>
+                        <span>Cross-functional Collaboration</span>
+                        <span>Applicant Screening</span>
+                        <span>Field Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <div class="cert-content">
+            <h1>Certificates & Trainings</h1>
+
+            <!-- ANTHROPIC CERTIFICATES -->
+            <div class="cert-box">
+                <div class="cert-header">
+                    <h2>Anthropic Certificates</h2>
+                    <span class="provider">Anthropic Academy | 2026</span>
+                </div>
+                <div class="cert-tags">
+                    <a href="https://verify.skilljar.com/c/tmw2kmx5t7n7" target="_blank" class="clickable-tag link-tag">Claude 101 <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/zjcizf45qn8b" target="_blank" class="clickable-tag link-tag">Introduction to Claude Cowork <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/f2acii3gv2sq" target="_blank" class="clickable-tag link-tag">AI Capabilities and Limitations <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/ym8oz8556ohq" target="_blank" class="clickable-tag link-tag">AI Fluency: Framework & Foundations <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/moy96senq7wk" target="_blank" class="clickable-tag link-tag">AI Fluency for Builders <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/jcug6r6s6f8k" target="_blank" class="clickable-tag link-tag">AI Fluency for Students <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://verify.skilljar.com/c/z3i4mk8g9u3f" target="_blank" class="clickable-tag link-tag">Teaching AI Fluency <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <!-- TESDA VGD -->
+            <div class="cert-box">
+                <div class="cert-header">
+                    <h2>Visual Graphic Design Training</h2>
+                    <span class="provider">TESDA ONLINE PROGRAM | 2026</span>
+                </div>
+                <div class="cert-tags">
+                    <span class="clickable-tag" data-img="img/Certificates/Tesda-VGD/1. Introduction to Visual Graphic Design.jpeg" data-title="Intro to Visual Graphic Design" onclick="openModal(this)">
+                        Introduction to Visual Graphic Design <i class="fas fa-search-plus"></i>
+                    </span>
+                    <span class="clickable-tag" data-img="img/Certificates/Tesda-VGD/2. Developing Designs for User Interface.jpeg" data-title="Designing for UI" onclick="openModal(this)">
+                        Developing Designs for User Interface <i class="fas fa-search-plus"></i>
+                    </span>
+                    <span class="clickable-tag" data-img="img/Certificates/Tesda-VGD/3. Developing Designs for User Experience.jpeg" data-title="Designing for UX" onclick="openModal(this)">
+                        Developing Designs for User Experience <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- TESDA CSS -->
+            <div class="cert-box">
+                <div class="cert-header">
+                    <h2>Computer Systems Servicing Training</h2>
+                    <span class="provider">TESDA | 2023</span>
+                </div>
+                <div class="cert-tags">
+                    <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/1. NATIONAL CERTIFICATE II.png" data-title="National Certificate II" onclick="openModal(this)">
+                        National Certificate II <i class="fas fa-search-plus"></i>
+                    </span>
+                    <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/2. Introduction to CSS.jpeg" data-title="Introduction to CSS" onclick="openModal(this)">
+                        Introduction to CSS <i class="fas fa-search-plus"></i>
+                    </span>
+                    <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/3. Installing and Configuring Computer Systems.jpeg" data-title="Installing & Configuring Computer Systems" onclick="openModal(this)">
+                        Installing & Configuring Computer Systems <i class="fas fa-search-plus"></i>
+                    </span>
+                    <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/4. Setting Up Computer Networks.jpeg" data-title="Setting Up Computer Networks" onclick="openModal(this)">
+                        Setting Up Computer Networks <i class="fas fa-search-plus"></i>
+                    </span>
+                    <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/5. Setting Up Computer Servers.jpeg" data-title="Setting Up Computer Servers" onclick="openModal(this)">
+                        Setting Up Computer Servers <i class="fas fa-search-plus"></i>
+                    </span>
+                    <span class="clickable-tag" data-img="img/Certificates/Tesda-CSS/6. Maintaining Computer Systems and Networks.jpeg" data-title="Maintaining Computer Systems & Networks" onclick="openModal(this)">
+                        Maintaining Computer Systems & Networks <i class="fas fa-search-plus"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leadership">
+        <div class="leadership-content">
+            <h1>Leadership & Activities</h1>
+
+            <!-- DIGITAL AMBASSADOR ENTRY -->
+            <div class="lead-box">
+                <div class="lead-header">
+                    <div class="org-info">
+                        <h2>iACADEMY Nexus</h2>
+                        <p>Institutional Brand Campaign</p>
+                    </div>
+                    <div class="role-info">
+                        <span class="role">Digital Ambassador</span>
+                        <span class="date">A.Y. 2026 – Present</span>
+                    </div>
+                </div>
+                <ul class="lead-list">
+                    <li>Endorsed by the Academics Department to serve as a Digital Ambassador representing the BSIT Web Development program across official school campaigns.</li>
+                    <li>Participated in promotional media shoots, lookbooks, and branding initiatives to showcase student talent and iACADEMY's academic programs.</li>
+                    <li>Coordinated with marketing and academic teams in executing creative requirements and promoting digital content across communication channels.</li>
+                </ul>
+            </div>
+
+            <div class="lead-box">
+                <div class="lead-header">
+                    <div class="org-info">
+                        <h2>iACADEMY COMPILE</h2>
+                        <p>(Computing Students that Innovate and Lead)</p>
+                    </div>
+                    <div class="role-info">
+                        <span class="role">Organization Treasurer</span>
+                        <span class="date">August 2025 – August 2026</span>
+                    </div>
+                </div>
+                <ul class="lead-list">
+                    <li>Managed financial records and tracked organization funds.</li>
+                    <li>Assisted in budgeting and financial reporting.</li>
+                    <li>Collaborated with officers for event planning.</li>
+                </ul>
+            </div>
+
+            <div class="lead-box">
+                <div class="lead-header">
+                    <div class="org-info">
+                        <h2>iACADEMY Community Outreach Programs</h2>
+                    </div>
+                    <div class="role-info">
+                        <span class="role">Volunteer Participant</span>
+                        <span class="date">2023 – Present</span>
+                    </div>
+                </div>
+                <ul class="lead-list">
+                    <li>Assisted in distributing materials and facilitating activities.</li>
+                    <li>Engaged with participants through games and events.</li>
+                    <li>Supported community and youth development initiatives.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-content">
+            <h1>Contact Me</h1>
+            <p>I'm currently looking for new opportunities or just to connect! <br> My inbox is always open.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>acera.leiminaile@gmail.com</p> <a href="mailto:acera.leiminaile@gmail.com" class="contact-link">Send a message</a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Lei Min Aile Acera</p>
+                    <a href="https://www.linkedin.com/in/leiminaile-acera" target="_blank" class="contact-link">Connect with me</a>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Calabarzon, Philippines</p>
+                    <span class="contact-status">Looking for Learning Opportunities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by <span>Lei Min Aile Acera</span> | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fas fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL HTML (Supports Single Cert Image & 6-Photo Gallery) -->
+    <div id="certModal" class="modal" onclick="closeModal(event)">
+        <span class="close" onclick="closeModal(event)">&times;</span>
+        
+        <button class="modal-nav prev" id="galleryPrev" onclick="changeSlide(-1, event)">&#10094;</button>
+        <img class="modal-content" id="modalImg" alt="Preview Image">
+        <button class="modal-nav next" id="galleryNext" onclick="changeSlide(1, event)">&#10095;</button>
+        
+        <div id="caption"></div>
+        <div id="galleryCounter" class="gallery-counter"></div>
+    </div>
+
+    <!-- JAVASCRIPT FOR MODAL, GALLERY & NAV TOGGLE -->
+    <script>
+    // 6-PHOTO DOCUMENTATION GALLERY DATA (I-update ang src paths at captions dito)
+    const fieldOpsGallery = [
+        { src: "img/projects_banner/Charity Page Screenshots/BingoPlus App Charity Page – All Projects 6.png", caption:"1. BingoPlus App Charity Page – All Projects 6"},
+        { src: "img/projects_banner/Charity Page Screenshots/BingoPlus App Charity Page – All Projects 5.png", caption:"2. BingoPlus App Charity Page – All Projects 5"},
+        { src: "img/projects_banner/Charity Page Screenshots/BingoPlus App Charity Page – All Projects 4.png", caption:"3. BingoPlus App Charity Page – All Projects 4" },
+        { src: "img/projects_banner/Charity Page Screenshots/BingoPlus App Charity Page – All Projects 3.png", caption:"4. BingoPlus App Charity Page – All Projects 3"},
+        {src: "img/projects_banner/Charity Page Screenshots/BingoPlus App Charity Page – All Projects 2.png", caption:"5. BingoPlus App Charity Page – All Projects 2" },
+        { src: "img/projects_banner/Charity Page Screenshots/BingoPlus App Charity Page – All Projects 1.png", caption:"6. BingoPlus App Charity Page – All Projects 1" }
+    ];
+
+    let currentSlideIndex = 0;
+    let isGalleryMode = false;
+
+    // SINGLE IMAGE MODAL (Certificates)
+    function openModal(element) {
+        isGalleryMode = false;
+        const modal = document.getElementById("certModal");
+        const modalImg = document.getElementById("modalImg");
+        const captionText = document.getElementById("caption");
+        
+        document.getElementById("galleryPrev").style.display = "none";
+        document.getElementById("galleryNext").style.display = "none";
+        document.getElementById("galleryCounter").style.display = "none";
+
+        const imgSrc = element.getAttribute("data-img");
+        const title = element.getAttribute("data-title") || element.innerText;
+
+        if (imgSrc) {
+            modal.style.display = "block";
+            modalImg.src = encodeURI(imgSrc);
+            captionText.innerHTML = title;
+        }
+    }
+
+    // MULTI-PHOTO GALLERY MODAL (6 Field Ops Photos)
+    function openGalleryModal(startIndex = 0) {
+        isGalleryMode = true;
+        currentSlideIndex = startIndex;
+        
+        document.getElementById("certModal").style.display = "block";
+        document.getElementById("galleryPrev").style.display = "block";
+        document.getElementById("galleryNext").style.display = "block";
+        document.getElementById("galleryCounter").style.display = "block";
+        
+        updateGallerySlide();
+    }
+
+    function changeSlide(step, event) {
+        if (event) event.stopPropagation();
+        currentSlideIndex = (currentSlideIndex + step + fieldOpsGallery.length) % fieldOpsGallery.length;
+        updateGallerySlide();
+    }
+
+    function updateGallerySlide() {
+        const modalImg = document.getElementById("modalImg");
+        const captionText = document.getElementById("caption");
+        const counterText = document.getElementById("galleryCounter");
+        
+        const currentItem = fieldOpsGallery[currentSlideIndex];
+        modalImg.src = encodeURI(currentItem.src);
+        captionText.innerHTML = currentItem.caption;
+        counterText.innerHTML = `${currentSlideIndex + 1} / ${fieldOpsGallery.length}`;
+    }
+
+    function closeModal(event) {
+        if (!event || event.target.id === "certModal" || event.target.classList.contains("close")) {
+            document.getElementById("certModal").style.display = "none";
+            isGalleryMode = false;
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        const modal = document.getElementById("certModal");
+        if (modal.style.display === "block") {
+            if (event.key === "Escape") {
+                modal.style.display = "none";
+                isGalleryMode = false;
+            } else if (isGalleryMode && event.key === "ArrowRight") {
+                changeSlide(1);
+            } else if (isGalleryMode && event.key === "ArrowLeft") {
+                changeSlide(-1);
+            }
+        }
+    });
+
+    // HAMBURGER MENU TOGGLE
+    const menuIcon = document.getElementById('menu-icon');
+    const navigation = document.getElementById('navigation');
+
+    menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('fa-times');
+        navigation.classList.toggle('active');
+    });
+
+    function closeNav() {
+        menuIcon.classList.remove('fa-times');
+        navigation.classList.remove('active');
+    }
+    </script>
+</body>
+</html>
